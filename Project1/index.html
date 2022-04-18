@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="stylesheet" href="mystyle.css" > 
+</head>
+<body>
+    <div id="banner1">
+        <div id="text-piha">
+            Piha             
+        </div>
+        <div id="text-sun">
+            Sun Sand & Sea
+        </div>
+        
+        <div id="image1"><img src="piha4.jpg" alt="piha landscape"/></div>
+        <div id="image2"><img src="Piha_background1.jpg" alt="piha landscape"/></div> 
+        <div id="myName">
+            Priya Rane <br>Student ID: 1531139
+        </div>
+        <div id ="website-link1">
+            <a id="nav-link" href="http://www.piha.co.nz/" target= "Piha Website">Piha Website</a>
+        </div>
+    </div>
+
+    <div>
+        <nav id="Navigation-bar">
+          <br>
+          <ul id="nav-bar">
+            <li id="nav-item">
+              <a id="nav-link" href="Task 1 Storyboard.pdf" target="_blank">Part 1 StoryBoard</a>
+            </li>
+            <li id="nav-item">
+              <a id="nav-link" href="Task 2 Storyboard.pdf" target="_blank">Part 2 StoryBoard</a>
+            </li>
+            <li id="nav-item">
+              <a id="nav-link" href="wireframes.pdf" target="_blank">Part 3 Wireframe</a>
+            </li>
+          </ul>
+        </nav>
+            <div id="about-us">
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;&nbsp; Welcome to Beautiful Piha Beach Lodge!</p> 
+                <p>A getaway to Piha Beach at Waitakere Ranges Regional Park.</p>
+                <p>Convenient and wonderful location, spectacular views, sunshine </p>
+                <p>and a calm ambience that will make you forget the outer world.</p>
+                <ul>
+                    <li>Free WIFI</li>
+                    <li>Off-street Parking</li>
+                    <li>24hrs Housekeeping</li>
+                    <li>Cooking Facilities</li>
+                  </ul>
+            </div>    
+         
+        </div>
+            <div id="banner2">
+                <div id="car" ><img src="car1.png" alt="car"/>
+                    <div id="wheel1">
+                        <img src="wheel.png" id="w1">
+                    </div>
+                    <div id="wheel2">
+                        <img src="wheel.png" id="w2">
+                    </div>
+                </div>
+                <div id="text1">Spinning</div>
+                <div id="text2">car wheels</div>
+                <div id="learnMoreBtn" >
+                    <a id="nav-link" href="https://www.toyota.co.nz/new-car/hilux/" target= "Go to Website">LEARN MORE!</a>
+                </div>
+                <div id="name-Id">
+                    Priya Rane <br>Student ID: 1531139
+                </div>
+            </div> 
+            </div>
+
+        <form id="regForm">
+            <progress id="progress" value="25" max="100"> 32% </progress>
+            <div id="yourStay">
+                <div>
+                    <h2>Step 1: Book your stay</h2>
+                </div>
+                <div>
+                <label for="Check-In">Check-In:</label><br>
+                <input type="date" id="Check-In" name="Check-In"><br><br>
+                <label for="Check-Out">Check-Out:</label><br>
+                <input type="date" id="Check-Out" name="Check-Out"><br><br>
+                <label for="Rooms">Rooms:</label><br>
+                <select id="rooms" name="rooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
+                
+                <label for="Adults">Adults:</label><br>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
+                
+                <label for="Children">Children:</label><br>
+                <select id="children" name="children">
+                    <option value="1">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
+                <label for="agreement">I agree to the local native conservation initiative policies. </label><br>
+                <input type="checkbox" id="agreement" name="agreement">
+                <button type="button" onclick="showSecondPage()">Next</button>        
+                </div>
+        </div>
+        
+        <div style="display:none" id="personalDetails">
+            <div>
+                <h2>Sep 2: Personal Details</h2>
+            </div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="age">Select age (between 18 and 100):</label>
+            <input type="range" id="age" name="points" min="18" max="100"><br><br> 
+                        
+            <label for="Gender">Gender</label><br>
+            <select id="gender" name="gender">
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            <button type="button" onclick="showFirstPage()">Previous</button>
+            <button type="button" onclick="showThirdPage()">Next</button>
+        </div>
+        <div style="display:none" id="paymentDetails">
+            <div>
+                <h2>Step 3: Personalize your stay </h2>
+            </div>  
+
+            <label for="cookingFacility">Do you need cooking facility? </label><br>
+            <input type="checkbox" id="cooking" name="cooking"> Yes
+            <input type="checkbox" id="cooking" name="cooking"> No <br><br>
+            
+            <label for="equipment">Do you need to use activity equipments? </label><br>
+            <input type="checkbox" id="equipments" name="equipments"> Yes
+            <input type="checkbox" id="equipments" name="equipments"> No <br><br>
+
+            <label for="color" >Which color theme will you prefer:</label>
+            <input type="color" class="form-control form-control-color" id="color-picker" value="#87CEFA"><br><br><br>
+
+            <button type="button" onclick="showSecondPage()">Previous</button>
+            <button type="button" onclick="showFourthPage()">Submit</button>
+        </div>
+        <div style="display:none" id="summary">
+            <div>
+                <h2>Step 4: Summary</h2>
+            </div>
+            <table class="bookingTable">
+                <tr>
+                    <td class="leftCol">
+                        First name::
+                    </td>
+                    <td class="rightCol">
+                        <P id="fnameField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Last Name:
+                    </td>
+                    <td class="rightCol">
+                        <P id="lnameField">Null</P>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        Email:
+                    </td>
+                    <td class="rightCol">
+                        <P id="emailField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Phone:
+                    </td>
+                    <td class="rightCol">
+                        <P id="phoneField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Check-In:
+                    </td>
+                    <td class="rightCol">
+                        <P id="checkInField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Check-Out:
+                    </td>
+                    <td class="rightCol">
+                        <P id="checkOutField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Number of Rooms:
+                    </td>
+                    <td class="rightCol">
+                        <P id="roomField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Number of adults:
+                    </td>
+                    <td class="rightCol">
+                        <P id="adultsField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Number of children:
+                    </td>
+                    <td class="rightCol">
+                        <P id="childrenField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Cooking Facility:
+                    </td>
+                    <td class="rightCol">
+                        <P id="cookingField">Null</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Activity Equipments:
+                    </td>
+                    <td class="rightCol">
+                        <P id="activityField">Null</P>
+                    </td>
+                </tr>  
+                <tr>
+                    <td class="leftCol">
+                        I would like to receive email newsletters for specials.
+                    </td>
+                    <td class="rightCol">
+                        <input type="checkbox" id="subcription" name="subcription"> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="leftCol">
+                        Sign up now for specials & our exclusive promotions.
+                    </td>
+                    <td class="rightCol">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <button type="button" onclick="showThirdPage()">Previous</button>
+                        <button type="button">Sign Up</button>
+                    </td>
+                    </tr>
+                </table>
+        </div>
+    
+    <script>
+        var firstName = document.getElementById('fname');
+        var lastName = document.getElementById('lname');
+        var customerEmail = document.getElementById('email');
+        var customerPhone = document.getElementById('phone');
+        var checkInDate = document.getElementById('Check-In');
+        var checkOutDate = document.getElementById('Check-Out');
+        var noOfRooms = document.getElementById('rooms'); 
+        var noOfAdults = document.getElementById('adults');
+        var noOfChild = document.getElementById('children');
+        var cookingFacility = document.getElementById('cooking');
+        var equipmentCheck = document.getElementById('equipment');
+        var agreementCheck = document.getElementById('agreement');
+        
+        function showSecondPage(){
+            yourStay.style.display = 'none';
+            personalDetails.style.display = 'block';
+            paymentDetails.style.display = 'none';
+            summary.style.display = 'none';
+        }
+        function showFirstPage(){
+            yourStay.style.display = 'block';
+            personalDetails.style.display = 'none';
+            paymentDetails.style.display = 'none';
+            summary.style.display = 'none';
+        }
+        function showThirdPage(){
+            yourStay.style.display = 'none';
+            personalDetails.style.display = 'none';
+            paymentDetails.style.display = 'block';
+            summary.style.display = 'none';
+        }
+        function showFourthPage(){
+                yourStay.style.display = 'none';
+                personalDetails.style.display = 'none';
+                paymentDetails.style.display = 'none';
+                summary.style.display = 'block';
+    
+                document.getElementById("fnameField").innerHTML = firstName.value;
+                document.getElementById("lnameField").innerHTML = lastName.value;
+                document.getElementById("emailField").innerHTML = customerEmail.value;
+                document.getElementById("phoneField").innerHTML = customerPhone.value;
+                document.getElementById("checkInField").innerHTML = checkInDate.value;
+                document.getElementById("checkOutField").innerHTML = checkOutDate.value;
+                document.getElementById("roomField").innerHTML = noOfRooms.value;
+                document.getElementById("adultsField").innerHTML = noOfAdults.value;
+                document.getElementById("childrenField").innerHTML = noOfChild.value;
+                document.getElementById("cookingField").innerHTML = cookingFacility.value;
+                document.getElementById("activityField").innerHTML = equipmentCheck.value;
+            }
+
+    </script>
+    </form>
+</body>
+</html>
